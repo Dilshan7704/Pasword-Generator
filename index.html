@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Random <br>Password Generator
+            <hr class="hr1">
+        </h2>
+        <div class="passwordbox">
+            <input type="text" id="Password" placeholder="Password" readonly>
+            <span  id="COPY" class="material-symbols-outlined">
+                content_copy
+            </span>
+        </div>
+        <div class="lengthRow">
+            <p>Password Length</p>
+            <span id="sliderValue"></span>
+        </div>
+        <input type="range" id="LengthSlider" min="4" max="20">
+        <div class="row">
+            <span class="material-symbols-outlined checkbox">
+                radio_button_unchecked
+            </span>
+            <label for="uppercase" class="includeLabel">Include Uppercase Letters (A-Z)</label>
+            <input type="checkbox" id="uppercase" hidden>
+        </div>
+        <div class="row">
+            <span class="material-symbols-outlined checkbox">
+                radio_button_unchecked
+            </span>
+            <label for="lowercase" class="includeLabel">Include lowercase Letters (a-z)</label>
+            <input type="checkbox" id="lowercase" hidden>
+        </div>
+        <div class="row">
+            <span class="material-symbols-outlined checkbox">
+                radio_button_unchecked
+            </span>
+            <label for="syble" class="includeLabel">Include Symbles (#$%)</label>
+            <input type="checkbox" id="symble" hidden>
+        </div>
+        <div class="row">
+            <span class="material-symbols-outlined checkbox">
+                radio_button_unchecked
+            </span>
+            <label for="number" class="includeLabel">Include number Letters (0-9)</label>
+            <input type="checkbox" id="number" hidden>
+        </div>
+
+        <button type="button" id="generateBtn">
+            <span class="material-symbols-outlined">
+                electric_bolt
+                </span>Genarate Password</button>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
